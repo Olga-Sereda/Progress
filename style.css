@@ -1,0 +1,170 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.main {
+    max-width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+}
+
+.progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.progress__title {
+    margin: 0;
+    margin-right: auto;
+    font-size: 16px;
+}
+
+.progress__block {
+    display: flex;
+    padding-top: 40px;
+    width: 100%;
+}
+
+.progress__convas {
+    text-align: right;
+    width: 50%;
+}
+
+#canvas {
+    padding: 0 30px;
+}
+
+.progress__states {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 30px;
+    width: 50%;
+}
+
+#circle-input {
+    border-radius: 16px;
+    margin-right: 15px;
+    padding: 5px;
+    width: 45px;
+    text-align: center;
+}
+
+#circle-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.progress__value {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+
+.progress__text {
+    margin: 0;
+}
+
+.left {
+    margin-left: 55px;
+}
+
+.progress__animate {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 46px;
+    height: 30px;
+}
+
+.progress__animate input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 34px;
+    background-color: #EAF0F6;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 4px;
+    border-radius: 50%;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #005CFF;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #EAF0F6;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+}
+
+.progress__hide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 46px;
+    height: 30px;
+}
+
+.progress__hide input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.rotation {
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+

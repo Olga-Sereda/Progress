@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="main">
+    <div class="progress">
+      <h2 class="progress__title">Progress</h2>
+      <div class="progress__block">
+        <div class="progress__convas">
+          <canvas id="canvas"></canvas>
+        </div>
+        <div class="progress__states">
+          <label class="progress__value">
+            <input id="circle-input" min="0" max="100" type="number" value="0" onchange="changeInputValue(value)">
+            <p class="progress__text">Value</p>
+          </label>
+          <label class="progress__animate">
+            <input id="animate__input" type="checkbox" onclick="animateInp()">
+            <span class="slider"></span>
+            <p class="progress__text left">Animate</p>
+          </label>
+          <label class="progress__hide">
+            <input id="hide__input" class="hide__input" type="checkbox" onclick="hide()">
+            <span class="slider"></span>
+            <p class="progress__text left">Hide</p>
+          </label>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
