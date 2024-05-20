@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Progress test</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -13,8 +14,8 @@
     <div class="progress">
       <h2 class="progress__title">Progress</h2>
       <div class="progress__block">
-        <div class="progress__convas">
-          <canvas id="canvas"></canvas>
+        <div id="progress__bar" class="progress__bar">
+          <progress id="progress__circle" min="0" max="100" style="visibility:hidden;height:0;width:0;"></progress>
         </div>
         <div class="progress__states">
           <label class="progress__value">

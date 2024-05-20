@@ -1,0 +1,16 @@
+@media (max-width: 470px) {
+    .main {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .progress__block {
+        flex-direction: column;
+        max-width: 200px;
+    }
+
+    .progress__bar {
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+}
