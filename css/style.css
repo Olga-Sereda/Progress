@@ -32,7 +32,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 40px;
     width: 100%;
 }
 
@@ -68,7 +68,9 @@ html {
 
 .progress__value {
     display: flex;
-    align-items: baseline;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
     margin-bottom: 15px;
 }
 
